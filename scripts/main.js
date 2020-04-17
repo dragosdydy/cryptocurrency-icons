@@ -83,6 +83,7 @@ let initLazyLoading = () => {
          	console.log('target', e.target);
             rootEl.classList.add('is-clipped');
             target.classList.add('is-active');
+            let iconSymbolLowerCase = icon.symbol.toLowerCase();
 
             content.innerHTML = `
             <table class="table is-fullwidth">
@@ -98,31 +99,31 @@ let initLazyLoading = () => {
 				<tbody>
 					<tr>
 						<th>svg</th>
-						<td><img src="svg/color/${icon.symbol}.svg" /></td>
-						<td><img src="svg/black/${icon.symbol}.svg" /></td>
-						<td><img src="svg/icon/${icon.symbol}.svg" /></td>
-						<td class="is-variant-white"><img src="svg/white/${icon.symbol}.svg" /></td>
+						<td><img src="svg/color/${iconSymbolLowerCase}.svg" /></td>
+						<td><img src="svg/black/${iconSymbolLowerCase}.svg" /></td>
+						<td><img src="svg/icon/${iconSymbolLowerCase}.svg" /></td>
+						<td class="is-variant-white"><img src="svg/white/${iconSymbolLowerCase}.svg" /></td>
 					</tr>
 					<tr>
 						<th>128px</th>
-						<td><img src="128/color/${icon.symbol}.png" /></td>
-						<td><img src="128/black/${icon.symbol}.png" /></td>
-						<td><img src="128/icon/${icon.symbol}.png" /></td>
-						<td class="is-variant-white"><img src="128/white/${icon.symbol}.png" /></td>
+						<td><img src="128/color/${iconSymbolLowerCase}.png" /></td>
+						<td><img src="128/black/${iconSymbolLowerCase}.png" /></td>
+						<td><img src="128/icon/${iconSymbolLowerCase}.png" /></td>
+						<td class="is-variant-white"><img src="128/white/${iconSymbolLowerCase}.png" /></td>
 					</tr>
 					<tr>
 						<th>32px</th>
-						<td><img src="32/color/${icon.symbol}.png" /></td>
-						<td><img src="32/black/${icon.symbol}.png" /></td>
-						<td><img src="32/icon/${icon.symbol}.png" /></td>
-						<td class="is-variant-white"><img src="32/white/${icon.symbol}.png" /></td>
+						<td><img src="32/color/${iconSymbolLowerCase}.png" /></td>
+						<td><img src="32/black/${iconSymbolLowerCase}.png" /></td>
+						<td><img src="32/icon/${iconSymbolLowerCase}.png" /></td>
+						<td class="is-variant-white"><img src="32/white/${iconSymbolLowerCase}.png" /></td>
 					</tr>
 					<tr>
 						<th>32px@2x</th>
-						<td><img src="32@2x/color/${icon.symbol}@2x.png" /></td>
-						<td><img src="32@2x/black/${icon.symbol}@2x.png" /></td>
-						<td><img src="32@2x/icon/${icon.symbol}@2x.png" /></td>
-						<td class="is-variant-white"><img src="32@2x/white/${icon.symbol}@2x.png" /></td>
+						<td><img src="32@2x/color/${iconSymbolLowerCase}@2x.png" /></td>
+						<td><img src="32@2x/black/${iconSymbolLowerCase}@2x.png" /></td>
+						<td><img src="32@2x/icon/${iconSymbolLowerCase}@2x.png" /></td>
+						<td class="is-variant-white"><img src="32@2x/white/${iconSymbolLowerCase}@2x.png" /></td>
 					</tr>
 				</tbody>
 			</table>
