@@ -1,6 +1,7 @@
 # Cryptocurrency Icons
 
-[This project](http://cryptoicons.co) contains over 6000 icons – almost 400 crypto currencies, in 4 styles and a range of sizes. Completely free. All we ask is that you don’t claim them as your own, and share this resource with others.
+[DappRadar](https://dappradar.com) fork to be hosted on our servers
+This project contains over 6000 icons – almost 400 crypto currencies, in 4 styles and a range of sizes. Completely free. All we ask is that you don’t claim them as your own, and share this resource with others.
 
 We also have some fiat currencies: `USD`, `GBP`, `EUR`, `JPY`, `CNY`, `RUB`. *(We don't intend to add more)*
 
