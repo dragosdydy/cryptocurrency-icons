@@ -1,10 +1,10 @@
 {
 	"name": "cryptocurrency-icons",
-	"version": "0.16.1",
+	"version": "0.16.2",
 	"description": "A set of icons for all the main cryptocurrencies and altcoins, in a range of styles and sizes",
 	"license": "CC0-1.0",
-	"repository": "atomiclabs/cryptocurrency-icons",
-	"homepage": "http://cryptoicons.co",
+	"repository": "https://github.com/dragosdydy/cryptocurrency-icons",
+	"homepage": "http://dappradar.com",
 	"files": [
 		"32",
 		"32@2x",
@@ -40,6 +40,7 @@
 	"scripts": {
 		"test": "xo",
 		"manifest": "node scripts/manifest.js",
+		"build-js": "browserify scripts/main.js -o scripts/bundle.js",
 		"clean": "svgo --multipass --disable=removeViewBox $(globby {svg,originals}/**/*.svg)"
 	},
 	"devDependencies": {
