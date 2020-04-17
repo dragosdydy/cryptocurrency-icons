@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Crypto Icons</title>
+	<script src="https://cdn.jsdelivr.net/npm/underscore@1.10.2/underscore.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@15.1.1/dist/lazyload.min.js"></script>
+	<script src="scripts/bundle.js"></script>
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
+	<style>
+		.icon-container .icon-text {
+			display:flex;
+			justify-content: center;
+			flex-direction: column;
+			margin-left: 1em;
+			pointer-events: none;
+		}
+		.icon-container {
+			display:flex;
+			align-items: center;
+			height: 100%;
+			transition: all 0.2s;
+
+		}
+		.icon-container:hover {
+			box-shadow: 0 0.5em 1em -0.125em rgba(2,2,20,.3), 0 0 0 1px rgba(10,10,10,.02);
+			cursor:pointer;
+		}
+		.icon-container:hover > .icon-image img {
+			filter: invert(27%) sepia(51%) saturate(2878%) hue-rotate(346deg) brightness(104%) contrast(97%);
+		}
+		.icon-container .icon-image {
+			display:flex;
+			pointer-events: none;
+		}
+		.is-variant-white {
+			color:#fff !important;
+			background:#000;
+		}
+		.table tbody tr td {
+			text-align:center;
+			vertical-align: middle;
+		}
+		.table tr td, .table tr th {
+			vertical-align: middle;
+		}
+	</style>
+	<script>
+		
+	</script>
+</head>
+<body>
+	<section class="hero">
+	  <div class="hero-body">
+	    <div class="container">
+	      <h1 class="title is-centered">
+	        Crypto Icons
+	      </h1>
+	      <div class="form">
+	        <input id="search" autocomplete="off" class="input is-rounded is-large" type="text" />
+	      </div>
+	    </div>
+	  </div>
+	</section>
+
+	<div class="container">
+		<div id="icons" class="columns is-multiline"></div>
+	</div>
+
+	<div class="modal">
+	  <div class="modal-background"></div>
+	  <div class="modal-content">
+	    <div class="box"></div>
+	  </div>
+	  <button class="modal-close is-large" aria-label="close"></button>
+	</div>
+
+</body>
+</html>
